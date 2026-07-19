@@ -23,7 +23,7 @@ Translating the statistical insights from LAB1 into visual graphs to better reco
 
 ---
 
-##  Part 3: Data Cleaning
+##  LAB3: Data Cleaning
 Refining the dataset by addressing the anomalies and inconsistencies discovered during the exploration phase.
 *   **Operations Performed:**
     *   *Missing Value Handling:* Imputing or dropping null values.
@@ -34,7 +34,7 @@ Refining the dataset by addressing the anomalies and inconsistencies discovered 
 
 ---
 
-##  Part 4: Feature Engineering
+##  LAB4: Feature Engineering
 Transforming textual and categorical data into numerical formats so they can be processed by machine learning algorithms.
 *   **Label Encoding:** Converting ordinal categories into progressive integers where order matters.
 *   **One-Hot Encoding:** Converting nominal categories into binary vectors ($0$ or $1$) to avoid implying an incorrect numerical hierarchy.
