@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. โหลดข้อมูลเข้ามาก่อนเพื่อให้ระบบรู้จักตัวแปร df
-df = pd.read_csv(r"C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
+df = pd.read_csv(r"C:\Users\Admin\Desktop\ML-tase\ML02\sample_-_superstore.csv", encoding="cp874")
 
 print("="*60)
 print("PART 4: FEATURE ENGINEERING (USING PANDAS)")
