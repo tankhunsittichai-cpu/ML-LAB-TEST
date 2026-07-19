@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # --- โหลดข้อมูลจาก LAB1 ---
-df = pd.read_csv(r"C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
+df = pd.read_csv(r"ML02/C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
 
 print("="*50)
 print("LAB 2: DATA VISUALIZATION STARTING...")

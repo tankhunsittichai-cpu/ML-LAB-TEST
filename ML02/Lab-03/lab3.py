@@ -1,7 +1,7 @@
 import pandas as pd
 
 # --- โหลดข้อมูลเริ่มต้น ---
-df = pd.read_csv(r"C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
+df = pd.read_csv(r"ML02/C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
 
 print("="*60)
 print("PART 3: DATA CLEANING & STATS COMPARISON")

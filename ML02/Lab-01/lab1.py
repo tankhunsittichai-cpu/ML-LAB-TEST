@@ -3,7 +3,7 @@ import pandas as pd
 # -------------------------------
 # 1. Load Dataset
 # -------------------------------
-df = pd.read_csv(r"ML02/C:\Users\Admin\Desktop\ML-tase\sample_-_superstore.csv", encoding="cp874")
+df = pd.read_csv(r"C:\Users\Admin\Desktop\ML-tase\ML02\sample_-_superstore.csv", encoding="cp874")
 
 
 print("1. LOAD DATASET")
