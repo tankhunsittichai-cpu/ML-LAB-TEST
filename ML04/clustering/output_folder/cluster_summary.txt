@@ -1,0 +1,9 @@
+Silhouette Score : 0.12513779843291145
+
+cluster
+0     9
+1     9
+2    15
+3    10
+4    10
+Name: count, dtype: int64
