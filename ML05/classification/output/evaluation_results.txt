@@ -1,0 +1,20 @@
+================ SVM EVALUATION RESULTS ================
+
+[ SVM Kernel: LINEAR ]
+Accuracy Score: 75.00%
+Predictions:    [2 3 2 2 2 2 2 2 2 3 2 2 2 2 2 2]
+Actual Targets: [2 3 3 2 3 2 2 3 2 2 2 2 2 2 2 2]
+--------------------------------------------------
+
+[ SVM Kernel: POLY ]
+Accuracy Score: 68.75%
+Predictions:    [2 2 2 2 2 2 2 2 2 3 2 2 2 2 2 2]
+Actual Targets: [2 3 3 2 3 2 2 3 2 2 2 2 2 2 2 2]
+--------------------------------------------------
+
+[ SVM Kernel: RBF ]
+Accuracy Score: 75.00%
+Predictions:    [2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2]
+Actual Targets: [2 3 3 2 3 2 2 3 2 2 2 2 2 2 2 2]
+--------------------------------------------------
+
