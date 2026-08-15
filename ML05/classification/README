@@ -1,0 +1,19 @@
+# Lab: Support Vector Machine (SVM) Classification
+
+##  Objective
+The primary goal of this project is to apply Support Vector Machine (SVM) algorithms to classify a dataset of your choice. Additionally, it aims to evaluate and compare the performance of different SVM kernels.
+
+##  Workflow & Methodology
+This project follows these key steps:
+1. **Dataset Selection & Loading:** Select and load a custom dataset of choice.
+2. **Data Exploration & Preprocessing:** Analyze and preprocess the dataset (applicable for both clustering and classification tasks).
+3. **Feature Standardization:** Standardize the input features before training the models to ensure optimal performance.
+4. **Model Training:** Train SVM classification models using three different kernels:
+   - Linear
+   - Polynomial
+   - RBF (Radial Basis Function)
+5. **Model Evaluation:** Evaluate the performance of each trained model using the accuracy metric.
+
+##  Expected Outputs
+- **Accuracy Scores:** A comparative list of accuracy scores for each tested SVM kernel.
+- **Model Predictions:** The final classification predictions made on the chosen dataset.
