@@ -1,0 +1,16 @@
+
+## Objective
+The primary goal of this project is to apply the K-Nearest Neighbors (KNN) algorithm to classify a custom dataset. Additionally, it aims to evaluate and compare the model's performance across different numbers of neighbors (k values).
+
+##  Workflow & Methodology
+This project follows these key steps:
+1. **Dataset Selection & Loading:** Select and load a custom dataset of choice.
+2. **Data Exploration & Preprocessing:** Analyze the data and apply necessary preprocessing steps (suitable for clustering and classification).
+3. **Feature Standardization:** Standardize the input features to ensure all variables are on the same scale before training the model.
+4. **Model Training:** Train multiple KNN classification models using different k values (specifically k = 3, 5, and 7).
+5. **Model Evaluation:** Evaluate the performance of each trained model using the accuracy metric.
+
+##  Expected Outputs
+- **Accuracy Scores:** A comparative list of accuracy scores for each tested k value.
+- **Optimal K Value:** Identification of the best k value based on the highest test accuracy.
+- **Discussion:** A brief analysis and discussion of the experimental results.
