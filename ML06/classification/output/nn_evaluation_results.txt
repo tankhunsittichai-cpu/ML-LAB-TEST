@@ -1,0 +1,26 @@
+================ NEURAL NETWORK EVALUATION RESULTS ================
+
+[Config 1 (1 Hidden, 32 Neurons, 20 Epochs)]
+- Hidden Layers Config: [32]
+- Epochs Run: 20
+- Test Accuracy: 81.25%
+- Sample Predictions: [0 1 1 0 0 0 0 1 0 1]
+- Sample Actuals:     [0 1 1 0 1 0 0 1 0 0]
+------------------------------------------------------------
+
+[Config 2 (2 Hidden, 64-32 Neurons, 20 Epochs)]
+- Hidden Layers Config: [64, 32]
+- Epochs Run: 20
+- Test Accuracy: 87.50%
+- Sample Predictions: [0 1 1 0 0 0 0 1 0 1]
+- Sample Actuals:     [0 1 1 0 1 0 0 1 0 0]
+------------------------------------------------------------
+
+[Config 3 (2 Hidden, 64-32 Neurons, 50 Epochs)]
+- Hidden Layers Config: [64, 32]
+- Epochs Run: 50
+- Test Accuracy: 87.50%
+- Sample Predictions: [0 1 1 0 0 0 0 1 0 1]
+- Sample Actuals:     [0 1 1 0 1 0 0 1 0 0]
+------------------------------------------------------------
+
