@@ -156,12 +156,6 @@ This project implements a Deep Convolutional Neural Network (DCNN) to classify i
 
 ---
 
-## 3. Workflow
-
-```text
-Data Loading ➔ Preprocessing & Standardization ➔ Train/Test Split ➔ DCNN Model Building (Multiple Configs) ➔ Model Training & Epoch Tuning ➔ Evaluation & Results Export
-
-
  ## References
 https://www.kaggle.com/code/shahraizanwar/age-gender-ethnicity-prediction
  ---
