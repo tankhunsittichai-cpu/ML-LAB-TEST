@@ -1,0 +1,33 @@
+# LAB 8 - Deep Convolutional Neural Network (DCNN) Classification
+
+This project implements a Deep Convolutional Neural Network (DCNN) to classify images from a selected dataset. It focuses on evaluating and comparing model performance across different epoch counts, hyperparameter configurations, and layer architectures.
+
+---
+
+## 1. Project Structure
+
+* `main.py` : The main execution pipeline.
+* `data_loader.py` : Loads the selected dataset.
+* `preprocessing.py` : Cleans data, normalizes/standardizes features, and reshapes data into 2D image formats for DCNN.
+* `split_data.py` : Splits data into Training and Testing sets.
+* `dcnn_model.py` : Builds and trains various Deep CNN model configurations.
+* `evaluate.py` : Evaluates model accuracy, generates loss/accuracy curves, and outputs confusion matrices.
+* `test_dcnn.py` : Script for testing individual predictions using the trained models.
+* `outputs/` : Directory for saved models (`.keras` / `.h5`), scalers, evaluation graphs (`.png`), and execution logs.
+* `dataset/` : The raw dataset directory (e.g., image files or CSV format).
+
+---
+
+## 2. Objectives
+
+1. Apply a Deep Convolutional Neural Network (DCNN) to classify a dataset of your choice.
+2. Compare model performance using different numbers of training epochs.
+3. Compare different DCNN configurations (e.g., varying the number of convolutional layers, filters, and neurons).
+4. Evaluate and analyze each configuration using accuracy, loss curves, and prediction results.
+
+---
+
+## 3. Workflow
+
+```text
+Data Loading ➔ Preprocessing & Standardization ➔ Train/Test Split ➔ DCNN Model Building (Multiple Configs) ➔ Model Training & Epoch Tuning ➔ Evaluation & Results Export
