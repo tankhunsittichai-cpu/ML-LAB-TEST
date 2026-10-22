@@ -1,0 +1,6 @@
+# LAB-10 YOLOv8 Object Detection
+
+## รายละเอียด
+- การใช้งาน YOLOv8 สำหรับตรวจจับวัตถุ
+- การทำ Real-time Test และ Image Test
+- การประเมินผลโมเดล (Evaluate)
