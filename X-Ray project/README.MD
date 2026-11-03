@@ -1,4 +1,4 @@
-# 🩺 Medical AI: X-Ray Screener & Pneumonia Detection
+#  Medical AI: X-Ray Screener & Pneumonia Detection
 
 โปรเจกต์นี้พัฒนาระบบเว็บแอปพลิเคชันปัญญาประดิษฐ์สำหรับคัดกรองโรคปอดบวม (Pneumonia) จากภาพถ่ายรังสีทรวงอก (Chest X-Ray) โดยใช้โมเดล Deep Convolutional Neural Network (DCNN) และรองรับการแสดงผลจุดที่โมเดลใช้ในการตัดสินใจด้วยเทคนิค **Grad-CAM (Gradient-weighted Class Activation Mapping)** พร้อมเชื่อมต่อระบบเข้ากับ Backend ของ PHP และ XAMPP
 
@@ -59,3 +59,8 @@ X-Ray-Pneumonia-Detection/
 ### 2. เคสปกติ (Normal Screen)
 ระบบแสดงผลการวินิจฉัยสถานะปกติ พร้อมคำนวณค่าความมั่นใจของฝั่งปกติอย่างแม่นยำ:
 ![ผลการวิเคราะห์เคสปกติ](image.png)
+
+## References
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+ ---
+
