@@ -24,3 +24,8 @@
 1. **Clone Repository:**
    ```bash
    git clone [https://github.com/YOUR_USERNAME/X-Ray-Pneumonia-Detection.git](https://github.com/YOUR_USERNAME/X-Ray-Pneumonia-Detection.git)
+
+
+## References
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+ ---
