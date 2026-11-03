@@ -26,7 +26,7 @@
 | โครงสร้างโมเดล | Deep Convolutional Neural Network (DCNN) / Keras 3 |
 | รูปแบบอินพุต | ภาพ Grayscale ขนาด 224x224 พิกเซล |
 
-### 📊 ผลการประเมินประสิทธิภาพโมเดล (Model Evaluation)
+###  ผลการประเมินประสิทธิภาพโมเดล (Model Evaluation)
 - **Training & Validation Performance:** กราฟแสดงค่าความแม่นยำ (Accuracy) และค่าความสูญเสีย (Loss) ในระหว่างกระบวนการฝึกสอนโมเดล
   *(ใส่ภาพกราฟ Accuracy / Loss ไว้ที่นี่ เช่น `assets/accuracy-loss.png`)*
 - **Confusion Matrix:** ตารางแสดงผลการทดสอบความแม่นยำในการจำแนกเคสปกติและโรคปอดบวมของโมเดล
