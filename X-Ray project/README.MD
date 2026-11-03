@@ -18,16 +18,6 @@
 - **AI / Deep Learning:** TensorFlow, Keras 3, OpenCV, NumPy
 
 ---
-## 📊 Model Performance (ผลการประเมินประสิทธิภาพโมเดล)
-
-### 1. Training and Validation Accuracy & Loss
-กราฟแสดงค่าความแม่นยำ (Accuracy) และค่าความสูญเสีย (Loss) ในระหว่างการฝึกสอนโมเดล:
-![Training and Validation Performance](assets/accuracy-loss.png)
-
-### 2. Confusion Matrix
-ตารางแสดงผลการทำนายของโมเดลเทียบกับข้อมูลจริง (Ground Truth):
-![Confusion Matrix](assets/confusion-matrix.png)
----
 
 ##  Getting Started & Installation (วิธีติดตั้งและรันระบบ)
 
