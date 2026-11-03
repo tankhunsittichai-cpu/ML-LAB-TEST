@@ -1,31 +1,47 @@
-#  Medical AI: X-Ray Screener & Pneumonia Detection
+# 🩺 Medical AI: X-Ray Screener & Pneumonia Detection
 
-ระบบเว็บแอปพลิเคชันปัญญาประดิษฐ์สำหรับคัดกรองโรคปอดบวม (Pneumonia) จากภาพถ่ายรังสีทรวงอก (Chest X-Ray) พร้อมระบบอธิบายผลการทำนายด้วยเทคนิค **Grad-CAM (Gradient-weighted Class Activation Mapping)** เพื่อแสดงจุดที่ AI ใช้ในการตัดสินใจ
-
----
-
-##  Key Features (คุณสมบัติเด่น)
-- **AI-Powered Prediction:** ใช้โมเดล Deep Convolutional Neural Network (DCNN) ที่พัฒนาด้วย TensorFlow / Keras 3
-- **Grad-CAM Visualization:** สร้างภาพฮีทแมป (Heatmap) ไฮไลต์บริเวณความผิดปกติในปอดเมื่อพบความเสี่ยงโรคปอดบวม
-- **Full-Stack Integration:** เชื่อมต่อการทำงานระหว่าง Frontend (HTML/TailwindCSS/JavaScript), Backend (PHP/XAMPP/Apache) และ Machine Learning Server (Python)
-- **Responsive UI:** ออกแบบหน้าจอทันสมัย โทนสีเน้นความน่าเชื่อถือสไตล์แอปพลิเคชันทางการแพทย์
+โปรเจกต์นี้พัฒนาระบบเว็บแอปพลิเคชันปัญญาประดิษฐ์สำหรับคัดกรองโรคปอดบวม (Pneumonia) จากภาพถ่ายรังสีทรวงอก (Chest X-Ray) โดยใช้โมเดล Deep Convolutional Neural Network (DCNN) และรองรับการแสดงผลจุดที่โมเดลใช้ในการตัดสินใจด้วยเทคนิค **Grad-CAM (Gradient-weighted Class Activation Mapping)** พร้อมเชื่อมต่อระบบเข้ากับ Backend ของ PHP และ XAMPP
 
 ---
 
-##  Tech Stack (เทคโนโลยีที่ใช้)
-- **Frontend:** HTML5, TailwindCSS, JavaScript (ES6)
-- **Backend / Web Server:** PHP (Apache via XAMPP), Python 3.12
-- **AI / Deep Learning:** TensorFlow, Keras 3, OpenCV, NumPy
+## 1. Project Overview (ภาพรวมโปรเจกต์)
+
+โปรเจกต์เป็นการสร้างและปรับแต่งโมเดล DCNN สำหรับจำแนกภาพเอ็กซเรย์ปอดแบบ Binary Classification (ระหว่างภาวะปกติและปอดบวม) พร้อมสร้างระบบ Full-Stack ใช้งานจริงผ่านเว็บเบราว์เซอร์
+
+**Features (คุณสมบัติเด่น):**
+- ทำนายผลความเสี่ยงโรคปอดบวมพร้อมคำนวณค่าความมั่นใจ (Confidence Score) ของโมเดลแบบเรียลไทม์
+- สร้างภาพฮีทแมปไฮไลต์จุดผิดปกติด้วย **Grad-CAM** (รองรับการทำงานร่วมกับ Keras 3 ภายใน `GradientTape`)
+- เชื่อมต่อการทำงานแบบ Full-Stack ระหว่าง Frontend (HTML/TailwindCSS/JS), Backend (PHP via XAMPP/Apache) และ Machine Learning Server (Python)
+- ดีไซน์หน้าจอ UI ทันสมัย สไตล์ระบบงานสาธารณสุขและการแพทย์
 
 ---
 
-##  Getting Started & Installation (วิธีติดตั้งและรันระบบ)
+## 2. Dataset & Model Performance (ชุดข้อมูลและประสิทธิภาพโมเดล)
 
-1. **Clone Repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/X-Ray-Pneumonia-Detection.git](https://github.com/YOUR_USERNAME/X-Ray-Pneumonia-Detection.git)
+โมเดลถูกฝึกสอนและประเมินผลด้วยชุดข้อมูลภาพถ่ายเอ็กซเรย์ทรวงอกสำหรับจำแนกภาวะโรคปอดบวม
 
+| ข้อมูลจำเพาะ | รายละเอียด |
+|---|---|
+| ประเภทงาน | Binary Classification (Normal vs. Pneumonia) |
+| โครงสร้างโมเดล | Deep Convolutional Neural Network (DCNN) / Keras 3 |
+| รูปแบบอินพุต | ภาพ Grayscale ขนาด 224x224 พิกเซล |
 
-## References
-https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
- ---
+### 📊 ผลการประเมินประสิทธิภาพโมเดล (Model Evaluation)
+- **Training & Validation Performance:** กราฟแสดงค่าความแม่นยำ (Accuracy) และค่าความสูญเสีย (Loss) ในระหว่างกระบวนการฝึกสอนโมเดล
+  *(ใส่ภาพกราฟ Accuracy / Loss ไว้ที่นี่ เช่น `assets/accuracy-loss.png`)*
+- **Confusion Matrix:** ตารางแสดงผลการทดสอบความแม่นยำในการจำแนกเคสปกติและโรคปอดบวมของโมเดล
+  *(ใส่ภาพ Confusion Matrix ไว้ที่นี่ เช่น `assets/confusion-matrix.png`)*
+
+---
+
+## 3. Project Structure (โครงสร้างโปรเจกต์)
+
+```text
+X-Ray-Pneumonia-Detection/
+├── DCNN_model.py       # สคริปต์สำหรับสร้างและกำหนดโครงสร้าง Deep CNN
+├── data_loader.py      # จัดการการโหลดและเตรียมชุดข้อมูลภาพ X-Ray
+├── evaluate.py         # ประเมินผลประสิทธิภาพของโมเดล
+├── main.py             # สคริปต์หลักในการรันระบบหรือเทรนโมเดล
+├── preprocessing.py    # จัดการการแปลงขนาด ปรับแต่ง และคลีนข้อมูลภาพ
+├── server.py           # สคริปต์ Backend ทำนายผล และสร้างภาพฮีทแมป Grad-CAM
+└── README.md           # เอกสารอธิบายรายละเอียดโปรเจกต์
